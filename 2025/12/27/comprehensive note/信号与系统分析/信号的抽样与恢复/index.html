@@ -1,82 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 8.1.1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
-
-<link rel="stylesheet" href="/css/main.css">
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
-  </script>
-
-  <meta name="description" content="sampling function is the sampling frequency  为的最高频率 sampling signal   filter function $$\begin{align} H(\omega)&#x3D;\left{\begin{aligned}T_s&amp;&amp;(|\omega|\leqslant\omega_c)\0&amp;&amp;(|\omega|&amp;gt">
-<meta property="og:type" content="article">
-<meta property="og:title" content="linear algebra note">
-<meta property="og:url" content="http://example.com/2025/12/27/comprehensive%20note/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90/%E4%BF%A1%E5%8F%B7%E7%9A%84%E6%8A%BD%E6%A0%B7%E4%B8%8E%E6%81%A2%E5%A4%8D/index.html">
-<meta property="og:site_name" content="linear algebra note">
-<meta property="og:description" content="sampling function is the sampling frequency  为的最高频率 sampling signal   filter function $$\begin{align} H(\omega)&#x3D;\left{\begin{aligned}T_s&amp;&amp;(|\omega|\leqslant\omega_c)\0&amp;&amp;(|\omega|&amp;gt">
-<meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2025-12-27T08:15:55.315Z">
-<meta property="article:modified_time" content="2026-02-04T06:10:24.722Z">
-<meta property="article:author" content="Brice Li">
-<meta name="twitter:card" content="summary">
-
-<link rel="canonical" href="http://example.com/2025/12/27/comprehensive%20note/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90/%E4%BF%A1%E5%8F%B7%E7%9A%84%E6%8A%BD%E6%A0%B7%E4%B8%8E%E6%81%A2%E5%A4%8D/">
-
-
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : false,
-    isPost : true,
-    lang   : 'en'
-  };
-</script>
-
-  <title> | linear algebra note</title>
-  
-
-
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
-<style>mjx-container[jax="SVG"] {
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ckryo - 技术栈， 分享各类新奇有趣、科技、技术、开发，各类互联网优质精选文章以及优秀开源项目； -- by Ckryo。">
+    <meta name="keywords" content="Ckryo, php, laravel, vue, iview, ios, 全栈工程师, 创业" />
+    <meta name="author" content="Ckryo">
+    <link rel="icon" href="/favicon.ico">
+    <!-- page title -->
+    <title>Ckryo - 技术栈</title>
+    <!-- bootstrap css -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+    <!-- css -->
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/animate.css" rel="stylesheet">
+    <link href="/css/magnific-popup.css" rel="stylesheet">
+    <!-- fonts -->
+    <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='/fonts/FontAwesome.otf' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/linear-icons.css">
+    <link rel="stylesheet" href="/css/share.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="/https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="/https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <!-- javascript -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.easing.min.js"></script>
+<meta name="generator" content="Hexo 8.1.1"><style>mjx-container[jax="SVG"] {
   direction: ltr;
 }
 
@@ -189,125 +145,128 @@ mjx-container[display="true"] + br {
   display: none;
 }
 </style></head>
-
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
-
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
+<body data-spy="scroll" data-target="#post-scroll-spy">
+    <!-- preloader -->
+    <div id="preloader">
+        <div class="spinner spinner-round"></div>
     </div>
-  </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">linear algebra note</h1>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-      <p class="site-subtitle" itemprop="description">generated by Brice Li(李闻通)</p>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-    </div>
-  </div>
-</div>
-
-
-
-
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
-
-  </li>
-  </ul>
-</nav>
-
-
-
-
-</div>
-    </header>
-
-    
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-
-          <div class="content post posts-expand">
-            
-
-    
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2025/12/27/comprehensive%20note/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90/%E4%BF%A1%E5%8F%B7%E7%9A%84%E6%8A%BD%E6%A0%B7%E4%B8%8E%E6%81%A2%E5%A4%8D/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Brice Li">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="linear algebra note">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2025-12-27 16:15:55" itemprop="dateCreated datePublished" datetime="2025-12-27T16:15:55+08:00">2025-12-27</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2026-02-04 14:10:24" itemprop="dateModified" datetime="2026-02-04T14:10:24+08:00">2026-02-04</time>
-              </span>
-
-          
-
+    <!-- / preloader -->
+    <!-- header -->
+    <header>
+        <!-- nav -->
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-logo" href="/index.html">
+                        Ckryo
+                    </a>
+                </div>
+                <!-- / navbar-header -->
+                
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                    	
+                        <li>
+	                        <a href="/">
+	                        	
+	                        		<i class="fa fa-"></i>
+	                        	
+	                        	<span>首页</span>
+	                        </a>
+                        </li>
+                        
+                        <li>
+	                        <a href="/project/index.html">
+	                        	
+	                        		<i class="fa fa-"></i>
+	                        	
+	                        	<span>项目</span>
+	                        </a>
+                        </li>
+                        
+                        <li>
+	                        <a href="/post/index.html">
+	                        	
+	                        		<i class="fa fa-"></i>
+	                        	
+	                        	<span>文章</span>
+	                        </a>
+                        </li>
+                        
+                        <li>
+	                        <a href="/about.html">
+	                        	
+	                        		<i class="fa fa-"></i>
+	                        	
+	                        	<span>关于我</span>
+	                        </a>
+                        </li>
+                        
+                        <li>
+	                        <a href="/project/2016/04/28/hexo-minimal.html">
+	                        	
+	                        		<i class="fa fa-tachometer"></i>
+	                        	
+	                        	<span>Minimal</span>
+	                        </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                <!--/ nav-collapse -->
+            <!-- / container -->
+        </nav>
+        <!-- / nav -->
+        <!-- header-banner -->
+        <div id="header-banner" class="demo-1"  style="background-image: url(/images/banner-bg.jpg)" >
+    <div class="banner-content text-center">
+        <div class="banner-info">
+            <h1 id="banner-title">Ckryo - 技术栈</h1>
+            <p id="banner-description" style="display: none" data-in-effect="rotateInUpRight">
+                优秀技术资源分享
+            </p>
         </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-        <ul>
+        <!-- / banner-info -->
+    </div>
+    <!-- / banner-content -->
+</div>
+        <!-- / header-banner -->
+    </header>
+    <!-- / header -->
+    <!-- / content -->
+    <link rel="stylesheet" href="/css/i_slidebar.css">
+<link rel="stylesheet" href="/css/i_post.css">
+<div id="page-content" class="container">
+    <!-- post content + sidebar -->
+    <section id="blog">
+        <div class="row">
+            <!-- post content area -->
+            <div class="col-md-9">
+                <div class="blog block post-content-area">
+                    <img src="/images/post_preview_default.jpg" alt="">
+                    <div class="post-info-box">
+                        <h1 style="font-size: 48px;"></h1>
+                        <p class="post-info" style="margin-bottom: 15px;">
+                            发表于:
+                            <span style="color: #aaa; margin: 0 15px">
+                                2025.12.27
+                            </span>
+                             | 分类：
+                             <a href="#" style="margin: 0 5px">
+                                
+                                    -
+                                
+                             </a>
+                             
+                        </p>
+                        <ul>
 <li></li>
 </ul>
 <h4 id="sampling-function-delta-T-t-sum-n-infty-infty-delta-t-nT-s">sampling function<mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -2.733ex;" xmlns="http://www.w3.org/2000/svg" width="23.303ex" height="6.268ex" role="img" focusable="false" viewBox="0 -1562.5 10299.7 2770.5"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><path data-c="1D6FF" d="M195 609Q195 656 227 686T302 717Q319 716 351 709T407 697T433 690Q451 682 451 662Q451 644 438 628T403 612Q382 612 348 641T288 671T249 657T235 628Q235 584 334 463Q401 379 401 292Q401 169 340 80T205 -10H198Q127 -10 83 36T36 153Q36 286 151 382Q191 413 252 434Q252 435 245 449T230 481T214 521T201 566T195 609ZM112 130Q112 83 136 55T204 27Q233 27 256 51T291 111T309 178T316 232Q316 267 309 298T295 344T269 400L259 396Q215 381 183 342T137 256T118 179T112 130Z"></path></g><g data-mml-node="mi" transform="translate(477,-150) scale(0.707)"><path data-c="1D447" d="M40 437Q21 437 21 445Q21 450 37 501T71 602L88 651Q93 669 101 677H569H659Q691 677 697 676T704 667Q704 661 687 553T668 444Q668 437 649 437Q640 437 637 437T631 442L629 445Q629 451 635 490T641 551Q641 586 628 604T573 629Q568 630 515 631Q469 631 457 630T439 622Q438 621 368 343T298 60Q298 48 386 46Q418 46 427 45T436 36Q436 31 433 22Q429 4 424 1L422 0Q419 0 415 0Q410 0 363 1T228 2Q99 2 64 0H49Q43 6 43 9T45 27Q49 40 55 46H83H94Q174 46 189 55Q190 56 191 56Q196 59 201 76T241 233Q258 301 269 344Q339 619 339 625Q339 630 310 630H279Q212 630 191 624Q146 614 121 583T67 467Q60 445 57 441T43 437H40Z"></path></g></g><g data-mml-node="mo" transform="translate(1024.8,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="mi" transform="translate(1413.8,0)"><path data-c="1D461" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"></path></g><g data-mml-node="mo" transform="translate(1774.8,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g><g data-mml-node="mo" transform="translate(2441.6,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="munderover" transform="translate(3497.4,0)"><g data-mml-node="mo" transform="translate(393.8,0)"><path data-c="2211" d="M60 948Q63 950 665 950H1267L1325 815Q1384 677 1388 669H1348L1341 683Q1320 724 1285 761Q1235 809 1174 838T1033 881T882 898T699 902H574H543H251L259 891Q722 258 724 252Q725 250 724 246Q721 243 460 -56L196 -356Q196 -357 407 -357Q459 -357 548 -357T676 -358Q812 -358 896 -353T1063 -332T1204 -283T1307 -196Q1328 -170 1348 -124H1388Q1388 -125 1381 -145T1356 -210T1325 -294L1267 -449L666 -450Q64 -450 61 -448Q55 -446 55 -439Q55 -437 57 -433L590 177Q590 178 557 222T452 366T322 544L56 909L55 924Q55 945 60 948Z"></path></g><g data-mml-node="TeXAtom" transform="translate(0,-1050) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(600,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mo" transform="translate(1378,0)"><path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path></g><g data-mml-node="mi" transform="translate(2156,0)"><path data-c="221E" d="M55 217Q55 305 111 373T254 442Q342 442 419 381Q457 350 493 303L507 284L514 294Q618 442 747 442Q833 442 888 374T944 214Q944 128 889 59T743 -11Q657 -11 580 50Q542 81 506 128L492 147L485 137Q381 -11 252 -11Q166 -11 111 57T55 217ZM907 217Q907 285 869 341T761 397Q740 397 720 392T682 378T648 359T619 335T594 310T574 285T559 263T548 246L543 238L574 198Q605 158 622 138T664 94T714 61T765 51Q827 51 867 100T907 217ZM92 214Q92 145 131 89T239 33Q357 33 456 193L425 233Q364 312 334 337Q285 380 233 380Q171 380 132 331T92 214Z"></path></g></g><g data-mml-node="TeXAtom" transform="translate(762.3,1150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="221E" d="M55 217Q55 305 111 373T254 442Q342 442 419 381Q457 350 493 303L507 284L514 294Q618 442 747 442Q833 442 888 374T944 214Q944 128 889 59T743 -11Q657 -11 580 50Q542 81 506 128L492 147L485 137Q381 -11 252 -11Q166 -11 111 57T55 217ZM907 217Q907 285 869 341T761 397Q740 397 720 392T682 378T648 359T619 335T594 310T574 285T559 263T548 246L543 238L574 198Q605 158 622 138T664 94T714 61T765 51Q827 51 867 100T907 217ZM92 214Q92 145 131 89T239 33Q357 33 456 193L425 233Q364 312 334 337Q285 380 233 380Q171 380 132 331T92 214Z"></path></g></g></g><g data-mml-node="mi" transform="translate(5895.7,0)"><path data-c="1D6FF" d="M195 609Q195 656 227 686T302 717Q319 716 351 709T407 697T433 690Q451 682 451 662Q451 644 438 628T403 612Q382 612 348 641T288 671T249 657T235 628Q235 584 334 463Q401 379 401 292Q401 169 340 80T205 -10H198Q127 -10 83 36T36 153Q36 286 151 382Q191 413 252 434Q252 435 245 449T230 481T214 521T201 566T195 609ZM112 130Q112 83 136 55T204 27Q233 27 256 51T291 111T309 178T316 232Q316 267 309 298T295 344T269 400L259 396Q215 381 183 342T137 256T118 179T112 130Z"></path></g><g data-mml-node="mo" transform="translate(6339.7,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="mi" transform="translate(6728.7,0)"><path data-c="1D461" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"></path></g><g data-mml-node="mo" transform="translate(7311.9,0)"><path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path></g><g data-mml-node="mi" transform="translate(8312.1,0)"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="msub" transform="translate(8912.1,0)"><g data-mml-node="mi"><path data-c="1D447" d="M40 437Q21 437 21 445Q21 450 37 501T71 602L88 651Q93 669 101 677H569H659Q691 677 697 676T704 667Q704 661 687 553T668 444Q668 437 649 437Q640 437 637 437T631 442L629 445Q629 451 635 490T641 551Q641 586 628 604T573 629Q568 630 515 631Q469 631 457 630T439 622Q438 621 368 343T298 60Q298 48 386 46Q418 46 427 45T436 36Q436 31 433 22Q429 4 424 1L422 0Q419 0 415 0Q410 0 363 1T228 2Q99 2 64 0H49Q43 6 43 9T45 27Q49 40 55 46H83H94Q174 46 189 55Q190 56 191 56Q196 59 201 76T241 233Q258 301 269 344Q339 619 339 625Q339 630 310 630H279Q212 630 191 624Q146 614 121 583T67 467Q60 445 57 441T43 437H40Z"></path></g><g data-mml-node="mi" transform="translate(617,-150) scale(0.707)"><path data-c="1D460" d="M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z"></path></g></g><g data-mml-node="mo" transform="translate(9910.7,0)"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g></g></g></svg></mjx-container></h4>
@@ -327,188 +286,283 @@ H(\omega)=\left{\begin{aligned}T_s&amp;&amp;(|\omega|\leqslant\omega_c)\0&amp;&a
 ![[Pasted image 20251227161739.png]]<br>
 ![[Pasted image 20251227162009.png]]</p>
 
-    </div>
+                    </div>
+                    <!-- / post-info-box -->
+                </div>
+                <!-- / blog-block -->
+                
+<div id="comment">
+    <!--PC和WAP自适应版-->
+    <div id="SOHUCS" sid="请将此处替换为配置SourceID的语句"></div>
+    <script type="text/javascript">
+    (function() {
+        var appid = 'cysYE5nWR';
+        var conf = 'prod_ea59e8a942c2c4c0e72b24ed00ecddc9';
+        var width = window.innerWidth || document.documentElement.clientWidth;
+        if (width < 960) {
+            window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>');
+        } else {
+            var loadJs = function(d, a) {
+                var c = document.getElementsByTagName("head")[0] || document.head || document.documentElement;
+                var b = document.createElement("script");
+                b.setAttribute("type", "text/javascript");
+                b.setAttribute("charset", "UTF-8");
+                b.setAttribute("src", d);
+                if (typeof a === "function") {
+                    if (window.attachEvent) {
+                        b.onreadystatechange = function() {
+                            var e = b.readyState;
+                            if (e === "loaded" || e === "complete") {
+                                b.onreadystatechange = null;
+                                a();
+                            }
+                        }
+                    } else {
+                        b.onload = a;
+                    }
+                }
+                c.appendChild(b)
+            };
+            loadJs("http://changyan.sohu.com/upload/changyan.js", function() {
+                window.changyan.api.config({
+                    appid: appid,
+                    conf: conf
+                })
+            });
+        }
+    })();
+    </script>
+</div>
+<!-- / comments -->
 
-    
-    
-    
 
-      <footer class="post-footer">
+            </div>
+            <!-- / col-md-9 -->
+            <!-- / post content area -->
+            <style type="text/css">
+.post-tab-header {
+    width: 100%;
+    padding: 5px 50px;
+    height: 40px;
+    margin-bottom: 10px;
+}
 
-        
+.post-tab-header li {
+    width: 50%;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    padding-bottom: 10px;
+}
 
+.post-tab-header li.active {
+    color: #c39d6d;
+    border-bottom: 1px solid #c39d6d;
+}
 
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/2025/12/26/comprehensive%20note/complex%20analysis/Z%20Transform/" rel="prev" title="">
-      <i class="fa fa-chevron-left"></i> 
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/2026/01/02/comprehensive%20note/%E6%A8%A1%E7%94%B5/review/" rel="next" title="">
-       <i class="fa fa-chevron-right"></i>
-    </a></div>
-    </div>
-      </footer>
-    
-  </article>
-  
-  
-  
+.post-tab-content .post-tab-item {
+    display: none;
+}
 
+.post-tab-content .post-tab-item.active {
+    display: block;
+}
 
-
-          </div>
-          
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
+@keyframes MinefadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(45px);
     }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
+    to {
+        opacity: 1;
+        transform: none;
     }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
+}
 
+.MinefadeInUp {
+    animation-name: MinefadeInUp;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+.post-toc {
+    font-size: 14px;
+    color: #666;
+    overflow: auto;
+}
+
+.post-toc .nav-link {
+    padding: 0px;
+}
+
+.post-toc ol {
+    margin: 0;
+    padding: 5px 0 5px 20px;
+    text-align: left;
+    list-style: none;
+    font-size: 14px;
+}
+
+.post-toc ol>ol {
+    padding-left: 0;
+}
+
+.post-toc ol a {
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition-property: all;
+    color: #666;
+    border-bottom-color: #ccc;
+}
+
+.post-toc ol a:hover {
+    color: #000;
+    border-bottom-color: #000;
+}
+
+.post-toc .nav-item {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1.8;
+}
+
+.post-toc .nav .nav-child {
+    display: none;
+}
+
+.post-toc .nav .active>.nav-child {
+    display: block;
+}
+
+.post-toc .nav .active-current>.nav-child {
+    display: block;
+}
+
+.post-toc .nav .active-current>.nav-child>.nav-item {
+    display: block;
+}
+
+.post-toc .nav .active>a {
+    color: #c39d6d;
+    border-bottom-color: #c39d6d;
+}
+
+.post-toc .nav .active-current>a {
+    color: #c39d6d;
+}
+
+.post-toc .nav .active-current>a:hover {
+    color: #c39d6d;
+}
+</style>
+<!-- post sidebar area -->
+<div class="col-md-3">
+    <div class="blog-sidebar" data-spy="affix" data-offset-top="627">
+        <ul class="post-tab-header">
+            <li class="active" data-index="0">文章目录</li>
+            <li data-index="1">站点概览</li>
+        </ul>
+        <div style="clear: both"></div>
+        <div class="post-tab-content">
+            <div id="post-scroll-spy" data-index="0" class="active post-tab-item animated MinefadeInUp">
+                <div class="post-toc">
+                    <ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#sampling-function-delta-T-t-sum-n-infty-infty-delta-t-nT-s"><span class="nav-number">1.</span> <span class="nav-text">sampling function</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#sampling-signal"><span class="nav-number">2.</span> <span class="nav-text">sampling signal</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#filter-function"><span class="nav-number">3.</span> <span class="nav-text">filter function</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BF%A1%E5%8F%B7%E6%81%A2%E5%A4%8D%E5%86%85%E6%8F%92%E5%85%AC%E5%BC%8F"><span class="nav-number">4.</span> <span class="nav-text">信号恢复内插公式</span></a></li></ol>
+                </div>
+            </div>
+            <div data-index="1" class="post-tab-item animated MinefadeInUp">
+                <div class="blog block post-sidebar-widget">
+    <img class="site-author-image" src="/images/avatar.gif">
+    <p class="site-author-name">Ckryo</p>
+    <p class="site-author-description">曾担任 微阿里（北京）科技有限公司 、微阿里（北京）品牌管理有限公司 CEO 、沈阳盾盾科技有限公司 创始人 之一， 曾从事过 VB，Andorid，PHP，Node，H5 项目开发，现主要从事Swift开发，从swift1.2开始使用swift代替其他语言进行完整的项目开发，精通IOS开发，拥有Mac软件开发经验，目前正在利用swift进行服务端开发...</p>
+    <!-- <div class="feed-link motion-element">
+                        <a href="/atom.xml" rel="alternate">
+                            <i class="fa fa-rss"></i> RSS
+                        </a>
+                    </div> -->
+    <nav class="site-state motion-element">
+        <div class="site-state-item site-state-posts">
+            <a href="/archives">
+                <!-- 计算文章 和 项目总数量 -->
+                
+                <span class="site-state-item-count">17</span>
+                <span class="site-state-item-name">文章</span>
+            </a>
         </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
-
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          Table of Contents
-        </li>
-        <li class="sidebar-nav-overview">
-          Overview
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#sampling-function-delta-T-t-sum-n-infty-infty-delta-t-nT-s"><span class="nav-number">1.</span> <span class="nav-text">sampling function</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#sampling-signal"><span class="nav-number">2.</span> <span class="nav-text">sampling signal</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#filter-function"><span class="nav-number">3.</span> <span class="nav-text">filter function</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BF%A1%E5%8F%B7%E6%81%A2%E5%A4%8D%E5%86%85%E6%8F%92%E5%85%AC%E5%BC%8F"><span class="nav-number">4.</span> <span class="nav-text">信号恢复内插公式</span></a></li></ol></div>
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">Brice Li</p>
-  <div class="site-description" itemprop="description"></div>
+        <div class="site-state-item site-state-categories">
+            <a href="/categories">
+	            <span class="site-state-item-count">0</span>
+	            <span class="site-state-item-name">项目</span>
+            </a>
+        </div>
+    </nav>
 </div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">17</span>
-          <span class="site-state-item-name">posts</span>
-        </a>
-      </div>
-  </nav>
-</div>
-
-
-
-      </div>
-
+            </div>
+        </div>
     </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2026</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Brice Li</span>
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
-  </div>
+<!-- / col-sm-4 col-md-3 -->
+<!-- / post sidebar area -->
+<script type="text/javascript">
+$(function() {
+    $('.post-tab-header').on('click', 'li', function() {
+        if ($(this).hasClass('active')) return;
+        $('.post-tab-header li').removeClass('active');
+        $('.post-tab-content .post-tab-item').removeClass('active');
+        $(this).addClass('active');
+        var index = $(this).data('index');
+        $('.post-tab-content').find('.post-tab-item[data-index=' + index + ']').addClass('active');
+    });
+});
+</script>
+        </div>
+        <!-- / row -->
+    </section>
+    <!-- / post content + sidebar -->
+</div>
 
-        
-
-
-
-
-
-
-
-
-      </div>
-    </footer>
-  </div>
-
-  
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/muse.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-
-  
-
+        <!-- / content -->
 </body>
+<!-- footer -->
+<footer>
+    <div class="container">
+        <p class="footer-info">© Made by Ckryo</p>
+    </div>
+    <!-- / container -->
+</footer>
+<!-- / footer -->
+<!-- portfolio -->
+<script src="/js/custom.js"></script>
+<script src="/js/jquery.shuffle.min.js"></script>
+<!-- lightbox -->
+<script src="/js/jquery.magnific-popup.min.js"></script>
+<!-- / lightbox -->
+<!-- / portfolio -->
+<!-- preloader -->
+<script src="/js/preloader.js"></script>
+<!-- / preloader -->
+<!-- / javascript -->
+<script src="/js/jquery.lettering.js"></script>
+<script src="/js/jquery.textillate.js"></script>
+<script>
+$(function() {
+    $('#banner-title').textillate({
+        in: {
+            // set the effect name
+            effect: 'fadeInDown',
+            callback: function() {
+                $('#banner-description').css('display', 'block');
+                $('#banner-description').textillate();
+            }
+        },
+        // set the type of token to animate (available types: 'char' and 'word')
+        type: 'char'
+    });
+});
+</script>
 </html>

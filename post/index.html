@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ckryo - 技术栈， 分享各类新奇有趣、科技、技术、开发，各类互联网优质精选文章以及优秀开源项目； -- by Ckryo。">
+    <meta name="keywords" content="Ckryo, php, laravel, vue, iview, ios, 全栈工程师, 创业" />
+    <meta name="author" content="Ckryo">
+    <link rel="icon" href="/favicon.ico">
+    <!-- page title -->
+    <title>Ckryo - 技术栈</title>
+    <!-- bootstrap css -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+    <!-- css -->
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/animate.css" rel="stylesheet">
+    <link href="/css/magnific-popup.css" rel="stylesheet">
+    <!-- fonts -->
+    <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='/fonts/FontAwesome.otf' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/linear-icons.css">
+    <link rel="stylesheet" href="/css/share.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="/https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="/https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <!-- javascript -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.easing.min.js"></script>
+<meta name="generator" content="Hexo 8.1.1"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+<body data-spy="scroll" data-target="#post-scroll-spy">
+    <!-- preloader -->
+    <div id="preloader">
+        <div class="spinner spinner-round"></div>
+    </div>
+    <!-- / preloader -->
+    <!-- header -->
+    <header>
+        <!-- nav -->
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-logo" href="/index.html">
+                        Ckryo
+                    </a>
+                </div>
+                <!-- / navbar-header -->
+                
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                    	
+                        <li>
+	                        <a href="/">
+	                        	
+	                        		<i class="fa fa-"></i>
+	                        	
+	                        	<span>首页</span>
+	                        </a>
+                        </li>
+                        
+                        <li>
+	                        <a href="/project/index.html">
+	                        	
+	                        		<i class="fa fa-"></i>
+	                        	
+	                        	<span>项目</span>
+	                        </a>
+                        </li>
+                        
+                        <li>
+	                        <a href="/post/index.html">
+	                        	
+	                        		<i class="fa fa-"></i>
+	                        	
+	                        	<span>文章</span>
+	                        </a>
+                        </li>
+                        
+                        <li>
+	                        <a href="/about.html">
+	                        	
+	                        		<i class="fa fa-"></i>
+	                        	
+	                        	<span>关于我</span>
+	                        </a>
+                        </li>
+                        
+                        <li>
+	                        <a href="/project/2016/04/28/hexo-minimal.html">
+	                        	
+	                        		<i class="fa fa-tachometer"></i>
+	                        	
+	                        	<span>Minimal</span>
+	                        </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                <!--/ nav-collapse -->
+            <!-- / container -->
+        </nav>
+        <!-- / nav -->
+        <!-- header-banner -->
+        <div id="header-banner" class="demo-1"  style="background-image: url(/images/banner-bg.jpg)" >
+    <div class="banner-content text-center">
+        <div class="banner-info">
+            <h1 id="banner-title">Ckryo - 技术栈</h1>
+            <p id="banner-description" style="display: none" data-in-effect="rotateInUpRight">
+                优秀技术资源分享
+            </p>
+        </div>
+        <!-- / banner-info -->
+    </div>
+    <!-- / banner-content -->
+</div>
+        <!-- / header-banner -->
+    </header>
+    <!-- / header -->
+    <!-- / content -->
+    <!-- content -->
+<link rel="stylesheet" href="/css/i_slidebar.css">
+<link rel="stylesheet" href="/css/i_post.css">
+<div id="page-content" class="container">
+    <!-- blog content + sidebar -->
+    <section>
+        <div class="row">
+            <!-- blog content area -->
+            <div class="col-sm-8 col-md-9">
+            	
+
+    
+        <article class="post-item">
+            <div class="blog block post-content-area">
+                
+                <div class="post-info-box">
+                    <a href="2026/02/20/comprehensive note/线性代数相关知识补充/有限维向量空间/"><h1></h1></a>
+                    <div class="post-meta">
+                      <span class="post-date">2026.02</span>
+                      <a href="#" class="post-author">
+                        
+                            -
+                        
+                      </a>
+                    </div>
+                    <div style="max-height: 350px; overflow: hidden; line-height: 24px">
+                        Finite-Dimensional Vector Spaces(有限维向量空间)
+linear combination(线性组合)
+
+[!info]
+向量空间  中向量组  的线性组合即其中 
+
+span(张成空间)
+
+[!info]
+
+上述 所有的线性组合构成的集合称为其张成空间即Missing or unrecognized delimiter for \Big\text{span}(\boldsymbol{v_1,v_2,\dots,v_m})=\Big{\sum_{k-1}^ma_k\boldsymbol{v_k}:a_k\in F,k=1,2,\dots,m\Big}
+称向量组  张成 
+
+
+
+[!caution]
+定义向量组 ( ) 张成空间为 {0}
+
+
+[!important]
+
+V 中向量张成的空间是最小的包含该向量组的 V 的子空间
+
+
+^span-property1
+取  中任意向量组  即证明其张成的向量组是子空间并且是所有包含该向量组的  的子空间的子集
+
+证明  是  的子空间
+
+取  得到 
+取    和      其中   
+
+故满足加法封闭性
+
+
+取  取任意  则有
+
+故满足标量乘法封闭性
+结合[[向量空间vector space#^ebf134]]    
+
+
+证明  是任意包含向量组  的子空间  的子集
+对任意  即为  分别与标量乘积的加和
+由于子空间具有加法封闭性和标量乘法封闭性，故  即 
+
+综合以上两个命题的证明即可 
+
+finite-dimensional vector space(有限维向量空间)
+
+[!info]
+如果向量空间  能够表示成某一向量组^1的张成空间，则称其为有限维向量空间
+
+
+polynomial(多项式)
+
+[!info]
+
+对于函数  若存在  使得对任意  均有 
+ 即  中所有多项式构成的集合
+
+
+
+[!important]
+ 为  [^2]的子空间
+
+只需一一验证[[向量空间vector space#^ebf134]]]即可
+degrees of a polynomial(多项式的次数)
+
+[!info]
+对于多项式  存在
+
+[^2]:  即集合  [[向量空间vector space#]]
+
+                    </div>
+                    <div class="blog-post-footer">
+                        <a href="2026/02/20/comprehensive note/线性代数相关知识补充/有限维向量空间/" class="btn btn-primary-filled"><span>阅读全文</span><i class="fa fa-long-arrow-right"></i></a>
+                        <div class="pull-right">
+                            
+                        </div>
+                    </div>
+                    <!-- / blog-post-footer -->
+                </div>
+                <!-- / post-info-box -->
+            </div>
+            <!-- / blog-block -->
+        </article>
+        <div class="space-50">&nbsp;</div>
+        <!-- / col-sm-8 col-md-9 -->
+    
+        <article class="post-item">
+            <div class="blog block post-content-area">
+                
+                <div class="post-info-box">
+                    <a href="2026/01/31/comprehensive note/线性代数相关知识补充/向量空间vector space/"><h1></h1></a>
+                    <div class="post-meta">
+                      <span class="post-date">2026.01</span>
+                      <a href="#" class="post-author">
+                        
+                            -
+                        
+                      </a>
+                    </div>
+                    <div style="max-height: 350px; overflow: hidden; line-height: 24px">
+                        Vector Space(向量空间)
+
+[!info]
+==对于具有以下性质的集合  ,称其为向量空间，以下所有的   均指代数闭域==
+commutativity(可交换性)
+(仅须加法满足即可)
+  则
+associativity(可结合性)
+
+for addition  则
+for scalar multiplication  
+
+distributive properties(分配性)
+
+ 以及  有
+
+additive identity(加法恒等元)
+
+存在  
+
+multiplicative identity(乘法恒等元)
+
+存在
+
+additive inverse(加法逆元)
+
+存在
+
+
+[!info]
+
+即集合  映射到 field  的所有函数组成的集合
+当  ，即为
+
+Subspace(子空间)
+
+[!info]
+对于以下满足所有性质的向量空间  的子集  称其为向量空间  的子空间
+additive identity
+
+
+
+
+可等价替换为  ==意味着证明 一般只需证明即可==
+
+close under addition
+
+
+
+close under scalar multiplication
+
+
+^ebf134
+
+[!caution]
+
+== 不是  的子空间==[^6]
+对  存在只满足additive identity 和 close under multiplication 的非子空间的子集 [^7]
+==** 的所有周期函数构成的集合  不是  的子空间 **==[^8]
+
+
+
+[!important]
+
+向量空间  的任意一族子空间  的交集  是  的子空间
+^subspace-property0
+
+
+证明：
+
+
+[!important]
+
+对  的任意两个子空间  令  有
+ 是  的子空间  
+^subspace-property1
+
+
+
+充分性
+
+情况一：存在  取任意 
+由  作为  子空间的加法封闭性可知
+若 由 作为子空间的标量乘法封闭性和加法封闭性可知 则矛盾
+所以  由于  具有任意性即  中任意向量均在  中，也就是说 
+然而这与  矛盾
+进而原假设不正确
+情况二：存在  类似情况一推导步骤，我们可以推导出
+ 原命题成立
+情况三：对任意  即  命题成立
+
+
+
+必要性
+而  为子空间
+
+
+
+[!important]
+
+对  的任意三个子空间的并集显然是  的子空间，当且仅当其中一个子空间包含另外两个
+ 是  的子空间  
+^subspace-property2
+
+
+
+充分性
+
+情况一：其中一个子空间是另外两个子空间的并集的子集
+i.e. 
+根据[[向量空间vector space#^subspace-property1]]我们可以得到  是  的子空间
+同样的再次运用[[向量空间vector space#^subspace-property1]]得到  结合 
+我们便证明了该情况下命题成立
+情况二：其中任意两个子空间的并集与第三个子空间不是子集和母集的关系
+i.e.   并且 
+即同时存在  和  则由于 是V的子空间由其加法封闭性
+
+若  则  矛盾
+若  则   矛盾
+进而该情况不成立
+
+
+情况三：其中两个子空间的并集为另一子空间的子集
+i.e.  
+即该命题直接成立
+
+
+
+必要性   ==注意[^9]==
+
+
+
+Sum of the subspaces(子空间之和)
+
+[!info]
+
+对于任意向量空间  的子空间 ， 定义其和为Missing or unrecognized delimiter for \Big\sum_{k=1}^{m}V_k=\Big{\sum_{k=1}^{m}\boldsymbol{v_k}\Big|\boldsymbol{v}_k\in V_k;,;k=1,2,\dots,m\Big}
+
+[!important]
+
+子空间的和是最小的包含这些子空间的子空间
+
+
+设
+此时    即  
+而对于任何包含集合   的向量空间  的子空间  必然包含 [^1]
+
+
+[!important]
+
+子空间加法具备可交换性，可结合性，具备加法恒等元
+
+
+
+[!caution]
+
+==子空间（除  外）不具备加法逆元==
+
+
+Direct sum(直和)
+
+[!info]
+满足对于  有且仅有  [^2] 一种表示方式的子空间  的和  称为直和，记为
+
+
+
+[!important]
+
+
+     [^2]当且仅当 
+
+
+不妨假设   
+存在另一种表示方式  
+即至少存在两个 
+两式相减得到
+
+而这与命题条件矛盾
+ ^direct-property1
+
+[!important]
+
+         [^3]
+
+
+充分性
+显然 [^4]，假设存在 
+则必然导致  即 
+此时显然存在两组  能表示 
+$$\left{\right.$$
+矛盾
+必要性
+ 意味着不存在  使得  [^5]
+即  当且仅当 
+而由[[向量空间vector space#^direct-property1]]可知 
+
+[^1]: 由子空间的加法封闭性可知 
+[^2]: 一一对应的 
+[^3]: 只在m=2时为充要条件，m其余取值情况下  是  的充分不必要条件
+[^4]: 由子空间的定义中加法恒等元存在性可知 
+[^5]: 因为假设存在非零的   使得  ,由子空间的标量乘法封闭性可知     所以会有 矛盾
+[^6]: 不满足标量乘法封闭性 
+[^7]: 取  或者取 
+[^8]: 因为周期可以取不一样的，取 
+[^9]: 值得注意的是这里不能粗暴地设 强行转为[[向量空间vector space#^subspace-property1]],这是不成立的,因为  不一定是  的自空间
+
+                    </div>
+                    <div class="blog-post-footer">
+                        <a href="2026/01/31/comprehensive note/线性代数相关知识补充/向量空间vector space/" class="btn btn-primary-filled"><span>阅读全文</span><i class="fa fa-long-arrow-right"></i></a>
+                        <div class="pull-right">
+                            
+                        </div>
+                    </div>
+                    <!-- / blog-post-footer -->
+                </div>
+                <!-- / post-info-box -->
+            </div>
+            <!-- / blog-block -->
+        </article>
+        <div class="space-50">&nbsp;</div>
+        <!-- / col-sm-8 col-md-9 -->
+    
+        <article class="post-item">
+            <div class="blog block post-content-area">
+                
+                <div class="post-info-box">
+                    <a href="2026/01/02/comprehensive note/模电/review/"><h1></h1></a>
+                    <div class="post-meta">
+                      <span class="post-date">2026.01</span>
+                      <a href="#" class="post-author">
+                        
+                            -
+                        
+                      </a>
+                    </div>
+                    <div style="max-height: 350px; overflow: hidden; line-height: 24px">
+                        
+静态工作点包括
+
+
+
+
+
+共射（一般用作中间级）
+共集（一般用作输入输出极）
+共基
+
+
+
+
+放大物理量
+电压和电流
+电流
+电压
+
+
+输入电阻
+
+高
+
+
+
+输出电阻
+
+低
+
+
+
+输出频带
+
+
+超级宽
+
+
+瞬时极性法
+B+,E+,C-
+B+,E+,C-
+B=0,==E+,C+==
+
+
+
+
+一般情况下$U_{CES}\approx U_{BE}=\left{硅三级管锗三级管\right.$即饱和管压降
+    ==一般而言
+Different mode signal差模信号：幅值相同方向相反的信号
+Common mode signal 共模信号：幅值相同方向相同的信号
+Common mode rejection ratio共模抑制比
+- 共模放大倍数
+- 差模放大倍数
+放大电路在低频段放大倍数下降原因：耦合电容和旁路电容
+在高频段放大倍数下降的原因：极间电容
+已知双端输入为$$u_{i1},u_{i2}\stackrel{对应共，差模分量}{\Huge\longrightarrow}\left{\right.$$
+![[c435bb184bc10036c5dd0436ef51a646.jpg]]
+
+
+
+
+负反馈
+
+
+
+
+
+电流负反馈(U_o)
+电压负反馈(I_o)
+
+
+
+
+令输出电压为零==看反馈回路两端电压是否为零==
+为零
+不为零
+
+
+
+稳定输出电流
+稳定输出电压
+
+
+
+
+带载能力强
+
+
+
+增大输出电阻
+减小输出电阻
+
+
+在求解反馈    时可直接令输入信号为零计算反馈量即可
+
+
+
+
+
+
+
+
+
+串联反馈(I_f)
+并联反馈(U_f)
+
+
+
+
+
+可减小从信号源索取的电流
+
+
+
+
+增大输入电阻
+
+
+
+
+
+
+关于波特图
+附加相移45°，10
+$$\dot{A}{u}=\pm\frac{\dot{A}m\prod{i=1}^{N}\Big(j\frac{f}{f{Li}}\Big)}{\prod_{i=1}^{N}\Big(1+j\frac{f}{f_{Li}}\Big)\prod_{i=1}^{M}\Big(1+j\frac{f}{f_{Hi}}\Big)}=\pm\frac{\dot{A}m}{\prod{i=1}^{N}\Big(1+\frac{f_{Li}}{jf}\Big)\prod_{i=1}^{M}\Big(1+\frac{jf}{f_{Hi}}\Big)}$$
+
+
+
+- 为正号时，为共集或者共基接法，中频段相位°,
+- 为负号时，为共射接法，中频段相位°
+- 为放大电路级数，为耦合电容个数
+- 判断电路的耦合方式：主要看低频段波特图
+- 平坦则为直接耦合
+- 下降则为阻容耦合
+
+
+甲类放大电路：晶体管始终导通
+
+
+乙类放大电路：两个晶体管交替工作，每管导通半个周期==存在交越失真==
+
+
+甲乙类放大电路：每管交替导通时长大于半周期==消除交越失真==
+
+
+==抑制温漂==和==稳定静态工作点==应该引入直流负反馈
+
+
+产生正弦波振荡条件
+
+正弦振荡电路包括
+
+放大电路
+选频网络
+正反馈网络
+稳幅环节
+
+
+放大电路是否能正常工作即具备合适的静态工作点
+满足相位条件（瞬时极性法判断——断开反馈，加信号u_0，看u_0极性是否与u_f相同）
+满足起振条件即
+对RC桥式振荡电路而言，  故对应起振条件  
+
+
+
+在RC振荡电路中反馈回路需要加入非线性环节,目的是==起振和稳幅==
+
+
+RC振荡电路中多采用电压串联负反馈原因是
+
+带载能力强
+输出电压失真小
+振荡频率稳定
+
+
+
+【品质因数】
+
+
+集成运放工作状态
+
+
+
+
+
+
+非线性区
+线性区
+
+
+
+
+工作在
+开环或正反馈
+深度负反馈
+
+
+满足
+虚断
+虚短和虚断
+
+
+
+电压比较器
+比例，积分，加减运算
+
+
+
+
+全波整流，半波整流
+
+
+                    </div>
+                    <div class="blog-post-footer">
+                        <a href="2026/01/02/comprehensive note/模电/review/" class="btn btn-primary-filled"><span>阅读全文</span><i class="fa fa-long-arrow-right"></i></a>
+                        <div class="pull-right">
+                            
+                        </div>
+                    </div>
+                    <!-- / blog-post-footer -->
+                </div>
+                <!-- / post-info-box -->
+            </div>
+            <!-- / blog-block -->
+        </article>
+        <div class="space-50">&nbsp;</div>
+        <!-- / col-sm-8 col-md-9 -->
+    
+        <article class="post-item">
+            <div class="blog block post-content-area">
+                
+                <div class="post-info-box">
+                    <a href="2025/12/27/comprehensive note/信号与系统分析/信号的抽样与恢复/"><h1></h1></a>
+                    <div class="post-meta">
+                      <span class="post-date">2025.12</span>
+                      <a href="#" class="post-author">
+                        
+                            -
+                        
+                      </a>
+                    </div>
+                    <div style="max-height: 350px; overflow: hidden; line-height: 24px">
+                        
+
+
+sampling function
+is the sampling frequency
+
+为的最高频率
+sampling signal
+
+
+filter function
+$$\begin{align}
+H(\omega)=\left{\begin{aligned}T_s&amp;&amp;(|\omega|\leqslant\omega_c)\0&amp;&amp;(|\omega|&gt;\omega_c)
+\end{aligned}\right.\Rightarrow h(t)=\frac{T_s\omega_s}{2\pi}\text{Sa}(\frac{\omega_st}{2})=\text{Sa}(\omega_ct)
+\end{align}$$
+信号恢复内插公式
+
+![[Pasted image 20251227161739.png]]
+![[Pasted image 20251227162009.png]]
+
+                    </div>
+                    <div class="blog-post-footer">
+                        <a href="2025/12/27/comprehensive note/信号与系统分析/信号的抽样与恢复/" class="btn btn-primary-filled"><span>阅读全文</span><i class="fa fa-long-arrow-right"></i></a>
+                        <div class="pull-right">
+                            
+                        </div>
+                    </div>
+                    <!-- / blog-post-footer -->
+                </div>
+                <!-- / post-info-box -->
+            </div>
+            <!-- / blog-block -->
+        </article>
+        <div class="space-50">&nbsp;</div>
+        <!-- / col-sm-8 col-md-9 -->
+    
+        <article class="post-item">
+            <div class="blog block post-content-area">
+                
+                <div class="post-info-box">
+                    <a href="2025/12/26/comprehensive note/complex analysis/Z Transform/"><h1></h1></a>
+                    <div class="post-meta">
+                      <span class="post-date">2025.12</span>
+                      <a href="#" class="post-author">
+                        
+                            -
+                        
+                      </a>
+                    </div>
+                    <div style="max-height: 350px; overflow: hidden; line-height: 24px">
+                        
+阶跃序列 $$u[n]=\left{\right.$$
+冲击序列$$\delta[n]=\left{\right.$$
+矩形序列
+卷积和
+
+
+性质
+
+冲击序列抽样性
+
+考虑离散信号
+
+Z 变换
+构造函数及其洛朗展开式
+具有的极点构成集合集合，且其对应的逆变换
+其逆变换一般有以下几种求法
+
+洛朗级数展开
+部分分式分解
+长除法(分子除以分母，不太常用)
+
+常见序列的Z 变换及其收敛域
+原序列变换收敛域
+定理
+
+左移性质
+右移性质
+微分性质
+尺度变换
+
+
+
+- prove:
+
+                    </div>
+                    <div class="blog-post-footer">
+                        <a href="2025/12/26/comprehensive note/complex analysis/Z Transform/" class="btn btn-primary-filled"><span>阅读全文</span><i class="fa fa-long-arrow-right"></i></a>
+                        <div class="pull-right">
+                            
+                        </div>
+                    </div>
+                    <!-- / blog-post-footer -->
+                </div>
+                <!-- / post-info-box -->
+            </div>
+            <!-- / blog-block -->
+        </article>
+        <div class="space-50">&nbsp;</div>
+        <!-- / col-sm-8 col-md-9 -->
+    
+        <article class="post-item">
+            <div class="blog block post-content-area">
+                
+                <div class="post-info-box">
+                    <a href="2025/12/12/comprehensive note/信号与系统分析/Gibbs Phenomenon/"><h1></h1></a>
+                    <div class="post-meta">
+                      <span class="post-date">2025.12</span>
+                      <a href="#" class="post-author">
+                        
+                            -
+                        
+                      </a>
+                    </div>
+                    <div style="max-height: 350px; overflow: hidden; line-height: 24px">
+                        
+~
+
+误差函数
+ε
+
+                    </div>
+                    <div class="blog-post-footer">
+                        <a href="2025/12/12/comprehensive note/信号与系统分析/Gibbs Phenomenon/" class="btn btn-primary-filled"><span>阅读全文</span><i class="fa fa-long-arrow-right"></i></a>
+                        <div class="pull-right">
+                            
+                        </div>
+                    </div>
+                    <!-- / blog-post-footer -->
+                </div>
+                <!-- / post-info-box -->
+            </div>
+            <!-- / blog-block -->
+        </article>
+        <div class="space-50">&nbsp;</div>
+        <!-- / col-sm-8 col-md-9 -->
+    
+        <article class="post-item">
+            <div class="blog block post-content-area">
+                
+                <div class="post-info-box">
+                    <a href="2025/12/09/comprehensive note/信号与系统分析/Nyquist-Shannon sampling theorem/"><h1></h1></a>
+                    <div class="post-meta">
+                      <span class="post-date">2025.12</span>
+                      <a href="#" class="post-author">
+                        
+                            -
+                        
+                      </a>
+                    </div>
+                    <div style="max-height: 350px; overflow: hidden; line-height: 24px">
+                        we define  as the sample-rate , for all signal function  ,  is its highest frequency , when we can strictly determine signal function from the sample sequence.
+
+Lemma1:    [[Fourier series#^serie-strans-function]]
+
+
+
+                    </div>
+                    <div class="blog-post-footer">
+                        <a href="2025/12/09/comprehensive note/信号与系统分析/Nyquist-Shannon sampling theorem/" class="btn btn-primary-filled"><span>阅读全文</span><i class="fa fa-long-arrow-right"></i></a>
+                        <div class="pull-right">
+                            
+                        </div>
+                    </div>
+                    <!-- / blog-post-footer -->
+                </div>
+                <!-- / post-info-box -->
+            </div>
+            <!-- / blog-block -->
+        </article>
+        <div class="space-50">&nbsp;</div>
+        <!-- / col-sm-8 col-md-9 -->
+    
+        <article class="post-item">
+            <div class="blog block post-content-area">
+                
+                <div class="post-info-box">
+                    <a href="2025/11/24/comprehensive note/complex analysis/卷积/"><h1></h1></a>
+                    <div class="post-meta">
+                      <span class="post-date">2025.11</span>
+                      <a href="#" class="post-author">
+                        
+                            -
+                        
+                      </a>
+                    </div>
+                    <div style="max-height: 350px; overflow: hidden; line-height: 24px">
+                        根据[[信号的分解#脉冲分量]]可以推知零状态响应 y(t) 和冲激响应 h(t) 满足
+
+
+位移性质
+flowchart TD
+A[开始判断] --&gt; B[定义系统：输入x(t) → 输出y(t)]
+B --&gt; C[将输入延迟τ：获得x(t-τ)]
+C --&gt; D[观察新输出：记录系统对x(t-τ)的响应y₁ = H[x(t-τ)]]
+D --&gt; E[将原输出延迟τ：获得y(t-τ)]
+E --&gt; F{比较y₁与y(t-τ)}
+F – 两者相等 --&gt; G[系统是时不变的]
+F – 两者不相等 --&gt; H[系统是时变的]
+
+
+                    </div>
+                    <div class="blog-post-footer">
+                        <a href="2025/11/24/comprehensive note/complex analysis/卷积/" class="btn btn-primary-filled"><span>阅读全文</span><i class="fa fa-long-arrow-right"></i></a>
+                        <div class="pull-right">
+                            
+                        </div>
+                    </div>
+                    <!-- / blog-post-footer -->
+                </div>
+                <!-- / post-info-box -->
+            </div>
+            <!-- / blog-block -->
+        </article>
+        <div class="space-50">&nbsp;</div>
+        <!-- / col-sm-8 col-md-9 -->
+    
+        <article class="post-item">
+            <div class="blog block post-content-area">
+                
+                <div class="post-info-box">
+                    <a href="2025/11/15/comprehensive note/信号与系统分析/系统/"><h1></h1></a>
+                    <div class="post-meta">
+                      <span class="post-date">2025.11</span>
+                      <a href="#" class="post-author">
+                        
+                            -
+                        
+                      </a>
+                    </div>
+                    <div style="max-height: 350px; overflow: hidden; line-height: 24px">
+                        线性时不变系统(Linear  Time-Invariant)
+线性性
+时不变性
+
+==反褶操作不具备时不变性==
+example
+Multiple \tag\begin{align} &amp;y(t)=x(c-t) \  \tag{先反褶后时移}output=&amp;y(t-t_0)=x(c-t+t_0)\output=&amp;x(c-t-t_0)\tag{先时移后反褶} \end{align}
+
+因果性
+微分特性
+稳定性
+系统函数
+==系统零状态响应下的响应与激励函数的比值==
+
+Laplace Transform
+for all  such that 
+if  
+称系统稳定
+Z Transform
+for all  such that 
+if   
+
+
+                    </div>
+                    <div class="blog-post-footer">
+                        <a href="2025/11/15/comprehensive note/信号与系统分析/系统/" class="btn btn-primary-filled"><span>阅读全文</span><i class="fa fa-long-arrow-right"></i></a>
+                        <div class="pull-right">
+                            
+                        </div>
+                    </div>
+                    <!-- / blog-post-footer -->
+                </div>
+                <!-- / post-info-box -->
+            </div>
+            <!-- / blog-block -->
+        </article>
+        <div class="space-50">&nbsp;</div>
+        <!-- / col-sm-8 col-md-9 -->
+    
+        <article class="post-item">
+            <div class="blog block post-content-area">
+                
+                <div class="post-info-box">
+                    <a href="2025/11/15/comprehensive note/信号与系统分析/信号的分解/"><h1></h1></a>
+                    <div class="post-meta">
+                      <span class="post-date">2025.11</span>
+                      <a href="#" class="post-author">
+                        
+                            -
+                        
+                      </a>
+                    </div>
+                    <div style="max-height: 350px; overflow: hidden; line-height: 24px">
+                        直流分量与交流分量
+
+
+周期信号
+
+非周期信号
+
+正交性
+
+
+奇分量与偶分量
+
+
+脉冲分量
+$$f(t)=\int^{\infty}{-\infty}f(\tau)\delta(t-\tau)\text{d}\tau=f(t)*\delta(t)f(t)=f(0)u(t)+\int^{\infty}{0}\frac{\text{d}f(\tau)}{\text{d}\tau}u(t-\tau)\text{d}\tau$$
+
+                    </div>
+                    <div class="blog-post-footer">
+                        <a href="2025/11/15/comprehensive note/信号与系统分析/信号的分解/" class="btn btn-primary-filled"><span>阅读全文</span><i class="fa fa-long-arrow-right"></i></a>
+                        <div class="pull-right">
+                            
+                        </div>
+                    </div>
+                    <!-- / blog-post-footer -->
+                </div>
+                <!-- / post-info-box -->
+            </div>
+            <!-- / blog-block -->
+        </article>
+        <div class="space-50">&nbsp;</div>
+        <!-- / col-sm-8 col-md-9 -->
+    
+
+            </div><!-- / col-sm-8 col-md-9 -->
+            <!-- / blog content area -->
+            <!-- blog sidebar area -->
+            <div class="col-sm-4 col-md-3 blog-sidebar">
+                <div class="blog block post-sidebar-widget">
+    <img class="site-author-image" src="/images/avatar.gif">
+    <p class="site-author-name">Ckryo</p>
+    <p class="site-author-description">曾担任 微阿里（北京）科技有限公司 、微阿里（北京）品牌管理有限公司 CEO 、沈阳盾盾科技有限公司 创始人 之一， 曾从事过 VB，Andorid，PHP，Node，H5 项目开发，现主要从事Swift开发，从swift1.2开始使用swift代替其他语言进行完整的项目开发，精通IOS开发，拥有Mac软件开发经验，目前正在利用swift进行服务端开发...</p>
+    <!-- <div class="feed-link motion-element">
+                        <a href="/atom.xml" rel="alternate">
+                            <i class="fa fa-rss"></i> RSS
+                        </a>
+                    </div> -->
+    <nav class="site-state motion-element">
+        <div class="site-state-item site-state-posts">
+            <a href="/archives">
+                <!-- 计算文章 和 项目总数量 -->
+                
+                <span class="site-state-item-count">17</span>
+                <span class="site-state-item-name">文章</span>
+            </a>
+        </div>
+        <div class="site-state-item site-state-categories">
+            <a href="/categories">
+	            <span class="site-state-item-count">0</span>
+	            <span class="site-state-item-name">项目</span>
+            </a>
+        </div>
+    </nav>
+</div>
+            </div><!-- / col-sm-4 col-md-3 -->
+            <!-- / blog sidebar area -->
+        </div><!-- / row -->
+    </section>
+    <!-- / blog content + sidebar -->
+
+    <!-- pagination -->
+    
+  <div class="pagination">
+    
+      <a style="display: inline-block; height: 42px; width: 1px"></a>
+    
+
+    
+    	<a href="/post/page/2/" class="btn btn-direction btn-default-filled pull-right"><span>下一页</span><i class="fa fa-long-arrow-right"></i></a>
+    
+  </div>
+
+    <!-- / pagination -->
+
+</div><!-- / container -->
+
+<!-- / content -->
+
+        <!-- / content -->
+</body>
+<!-- footer -->
+<footer>
+    <div class="container">
+        <p class="footer-info">© Made by Ckryo</p>
+    </div>
+    <!-- / container -->
+</footer>
+<!-- / footer -->
+<!-- portfolio -->
+<script src="/js/custom.js"></script>
+<script src="/js/jquery.shuffle.min.js"></script>
+<!-- lightbox -->
+<script src="/js/jquery.magnific-popup.min.js"></script>
+<!-- / lightbox -->
+<!-- / portfolio -->
+<!-- preloader -->
+<script src="/js/preloader.js"></script>
+<!-- / preloader -->
+<!-- / javascript -->
+<script src="/js/jquery.lettering.js"></script>
+<script src="/js/jquery.textillate.js"></script>
+<script>
+$(function() {
+    $('#banner-title').textillate({
+        in: {
+            // set the effect name
+            effect: 'fadeInDown',
+            callback: function() {
+                $('#banner-description').css('display', 'block');
+                $('#banner-description').textillate();
+            }
+        },
+        // set the type of token to animate (available types: 'char' and 'word')
+        type: 'char'
+    });
+});
+</script>
+</html>
