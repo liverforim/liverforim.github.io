@@ -1,947 +1,161 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Ckryo - 技术栈， 分享各类新奇有趣、科技、技术、开发，各类互联网优质精选文章以及优秀开源项目； -- by Ckryo。">
-    <meta name="keywords" content="Ckryo, php, laravel, vue, iview, ios, 全栈工程师, 创业" />
-    <meta name="author" content="Ckryo">
-    <link rel="icon" href="/favicon.ico">
-    <!-- page title -->
-    <title>Ckryo - 技术栈</title>
-    <!-- bootstrap css -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
-    <!-- css -->
-    <link href="/css/style.css" rel="stylesheet">
-    <link href="/css/animate.css" rel="stylesheet">
-    <link href="/css/magnific-popup.css" rel="stylesheet">
-    <!-- fonts -->
-    <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='/fonts/FontAwesome.otf' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/css/linear-icons.css">
-    <link rel="stylesheet" href="/css/share.min.css">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="/https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="/https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
-    <!-- javascript -->
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/jquery.easing.min.js"></script>
-<meta name="generator" content="Hexo 8.1.1"><style>mjx-container[jax="SVG"] {
-  direction: ltr;
-}
-
-mjx-container[jax="SVG"] > svg {
-  overflow: visible;
-}
-
-mjx-container[jax="SVG"][display="true"] {
-  display: block;
-  text-align: center;
-  margin: 1em 0;
-}
-
-mjx-container[jax="SVG"][justify="left"] {
-  text-align: left;
-}
-
-mjx-container[jax="SVG"][justify="right"] {
-  text-align: right;
-}
-
-g[data-mml-node="merror"] > g {
-  fill: red;
-  stroke: red;
-}
-
-g[data-mml-node="merror"] > rect[data-background] {
-  fill: yellow;
-  stroke: none;
-}
-
-g[data-mml-node="mtable"] > line[data-line] {
-  stroke-width: 70px;
-  fill: none;
-}
-
-g[data-mml-node="mtable"] > rect[data-frame] {
-  stroke-width: 70px;
-  fill: none;
-}
-
-g[data-mml-node="mtable"] > .mjx-dashed {
-  stroke-dasharray: 140;
-}
-
-g[data-mml-node="mtable"] > .mjx-dotted {
-  stroke-linecap: round;
-  stroke-dasharray: 0,140;
-}
-
-g[data-mml-node="mtable"] > svg {
-  overflow: visible;
-}
-
-[jax="SVG"] mjx-tool {
-  display: inline-block;
-  position: relative;
-  width: 0;
-  height: 0;
-}
-
-[jax="SVG"] mjx-tool > mjx-tip {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-mjx-tool > mjx-tip {
-  display: inline-block;
-  padding: .2em;
-  border: 1px solid #888;
-  font-size: 70%;
-  background-color: #F8F8F8;
-  color: black;
-  box-shadow: 2px 2px 5px #AAAAAA;
-}
-
-g[data-mml-node="maction"][data-toggle] {
-  cursor: pointer;
-}
-
-mjx-status {
-  display: block;
-  position: fixed;
-  left: 1em;
-  bottom: 1em;
-  min-width: 25%;
-  padding: .2em .4em;
-  border: 1px solid #888;
-  font-size: 90%;
-  background-color: #F8F8F8;
-  color: black;
-}
-
-foreignObject[data-mjx-xml] {
-  font-family: initial;
-  line-height: normal;
-  overflow: visible;
-}
-
-.MathJax path {
-  stroke-width: 3;
-}
-
-mjx-container[display="true"] {
-  overflow: auto hidden;
-}
-
-mjx-container[display="true"] + br {
-  display: none;
-}
-</style></head>
-<body data-spy="scroll" data-target="#post-scroll-spy">
-    <!-- preloader -->
-    <div id="preloader">
-        <div class="spinner spinner-round"></div>
-    </div>
-    <!-- / preloader -->
-    <!-- header -->
-    <header>
-        <!-- nav -->
-        <nav class="navbar navbar-default">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-logo" href="/index.html">
-                        Ckryo
-                    </a>
-                </div>
-                <!-- / navbar-header -->
-                
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                    	
-                        <li>
-	                        <a href="/">
-	                        	
-	                        		<i class="fa fa-"></i>
-	                        	
-	                        	<span>首页</span>
-	                        </a>
-                        </li>
-                        
-                        <li>
-	                        <a href="/project/index.html">
-	                        	
-	                        		<i class="fa fa-"></i>
-	                        	
-	                        	<span>项目</span>
-	                        </a>
-                        </li>
-                        
-                        <li>
-	                        <a href="/post/index.html">
-	                        	
-	                        		<i class="fa fa-"></i>
-	                        	
-	                        	<span>文章</span>
-	                        </a>
-                        </li>
-                        
-                        <li>
-	                        <a href="/about.html">
-	                        	
-	                        		<i class="fa fa-"></i>
-	                        	
-	                        	<span>关于我</span>
-	                        </a>
-                        </li>
-                        
-                        <li>
-	                        <a href="/project/2016/04/28/hexo-minimal.html">
-	                        	
-	                        		<i class="fa fa-tachometer"></i>
-	                        	
-	                        	<span>Minimal</span>
-	                        </a>
-                        </li>
-                        
-                    </ul>
-                </div>
-                
-                <!--/ nav-collapse -->
-            <!-- / container -->
-        </nav>
-        <!-- / nav -->
-        <!-- header-banner -->
-        <div id="header-banner" class="demo-1"  style="background-image: url(/images/banner-bg.jpg)" >
-    <div class="banner-content text-center">
-        <div class="banner-info">
-            <h1 id="banner-title">Ckryo - 技术栈</h1>
-            <p id="banner-description" style="display: none" data-in-effect="rotateInUpRight">
-                优秀技术资源分享
-            </p>
-        </div>
-        <!-- / banner-info -->
-    </div>
-    <!-- / banner-content -->
-</div>
-        <!-- / header-banner -->
-    </header>
-    <!-- / header -->
-    <!-- / content -->
-    
-
-<!-- content -->
-
-<!-- portfolio section -->
-<style type="text/css">
-    .page-to-all {
-        width: 100%;
-        text-align: center;
-        margin: 40px auto 10px;
-    }
-    .page-to-all a {
-        display: inline-block;
-    }
-    #portfolio .portfolio-filter li{
-        cursor: pointer;
-    }
-     #portfolio .lightbox .project-hover-tools {
-        left: 50%;
-        right: auto;
-        width: 42px;
-        margin-left: -21px;
-    }
-    #portfolio .lightbox .project-hover-tools a {
-        margin: 0;
-    }
-    
-    #portfolio .lightbox .project .project-preview {
-        position: relative;
-        height: 260px;
-        overflow: hidden;
-    }
-    #portfolio .lightbox .project .project-preview img {
-        min-width: 100%;
-        min-height: 100%;
-        position: relative;
-        margin: auto;
-    }
-    .project-item-name {
-        display: none;
-    }
-    @media (max-width: 768px) {
-        #portfolio .project-item-name {
-            display: block;
-            color: #fff;
-            padding: 10px 20px;
-            font-size: 18px;
-            font-weight: 600;
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>blog - generated by Brice Li(李闻通)</title><meta name="author" content="Brice Li"><meta name="copyright" content="Brice Li"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="blog">
+<meta property="og:url" content="http://liverforim.github.io/project/index.html">
+<meta property="og:site_name" content="blog">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://liverforim.github.io/project/img/butterfly-icon.png">
+<meta property="article:author" content="Brice Li">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://liverforim.github.io/project/img/butterfly-icon.png"><script type="application/ld+json"></script><link rel="shortcut icon" href="/project/img/favicon.png"><link rel="canonical" href="http://liverforim.github.io/project/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/project/css/index.css?v=5.5.4"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
         }
+        return value
+      }
     }
-</style>
-<section id="portfolio">
-    <div class="container">
-        <!-- portfolio filter -->
-        <ul class="portfolio-filter list-inline text-center">
-            <li><a data-group="all" class="active">全部</a></li>
-            
-        </ul>
-        <!--end portfolio filter -->
-        <ul class="row portfolio list-unstyled lightbox" id="grid">
 
-            
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
 
-            
-                <!-- project -->
-                <li class="col-xs-6 col-md-4 project" data-groups='["illustration"]'>
-                    <div class="img-bg-color primary">
-                        <div class="project-preview"><img src="/images/project_preview_more.jpg"></div>
-                        <!-- project-details -->
-                        <div class="project-details">
-                            <h5 class="project-title">敬请期待</h5>
-                            <p class="skill">更多项目</p>
-                        </div>
-                        <!-- / project-details -->
-                    </div>
-                    <!-- / img-bg-color -->
-                </li>
-                <!-- / project -->
-            
-        </ul>
-        <!-- / projects -->
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/project/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'blog',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'home'
+}</script><meta name="generator" content="Hexo 8.1.1"></head><body><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/project/"><span class="site-name">blog</span></a></span><div id="menus"></div></nav><div id="site-info"><h1 id="site-title">blog</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/project/2026/02/20/hello-world/" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2026-02-20T14:46:19.421Z" title="Created 2026-02-20 22:46:19">2026-02-20</time></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.  Quick Start  Create a new post 1$ hexo new "My New Post" More info: Writing  Run server 1$ hexo server More info: Server  Generate static files 1$ hexo generate More info: Generating  Deploy to remote sites 1$ hexo deploy More info: Deployment </div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/project/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/project/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Brice Li</div><div class="author-info-description"></div><div class="site-data"><a href="/project/archives/"><div class="headline">Articles</div><div class="length-num">1</div></a><a href="/project/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/project/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Posts</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/project/2026/02/20/hello-world/" title="Hello World">Hello World</a><time datetime="2026-02-20T14:46:19.421Z" title="Created 2026-02-20 22:46:19">2026-02-20</time></div></div></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>Archives</span>
+      
     </div>
-    <!-- / container -->
-    <script src="/js/project_index.js" type="text/javascript" charset="utf-8"></script>
-    <div class="page-to-all"><a href="/project/index.html" class="btn btn-primary btn-rounded">全部项目</a></div>
-</section>
-<!-- / portfolio section -->
-
-<!-- blog section 3col -->
-<style type="text/css">
-.post-preview {
-    display: block;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100%;
-    height: 230px;
-    overflow: hidden;
-}
-</style>
-<section id="blog-small">
-    <div class="container">
-        <div class="page-header no-margin text-center">
-            <h2>推荐文章</h2>
-        </div>
-        <p class="text-center">新奇有趣、科技、技术、开发，各类互联网优质精选文章</p>
-        <div class="row">
-            
-                <!-- post-block -->
-                <div class="col-sm-4">
-                    <div class="post-block">
-                        <a href="2026/02/20/comprehensive note/线性代数相关知识补充/有限维向量空间/" class="post-preview" style="background-image: url(/images/post_preview_default.jpg)"></a>
-                        <div class="small-post-text">
-                            <h5><a href="2026/02/20/comprehensive note/线性代数相关知识补充/有限维向量空间/"></a></h5>
-                            <p class="small-post-meta">
-                                2026/02/20
-                            </p>
-                            <p class="space-bottom" style="max-height: 100px; overflow: hidden">
-                                Finite-Dimensional Vector Spaces(有限维向量空间)
-linear combination(线性组合)
-
-[!info]
-向量空间  中向量组  的线性组合即其中 
-
-span(张成空间)
-
-[!info]
-
-上述 所有的线性组合构成的集合称为其张成空间即Missing or unrecognized delimiter for \Big\text{span}(\boldsymbol{v_1,v_2,\dots,v_m})=\Big{\sum_{k-1}^ma_k\boldsymbol{v_k}:a_k\in F,k=1,2,\dots,m\Big}
-称向量组  张成 
-
-
-
-[!caution]
-定义向量组 ( ) 张成空间为 {0}
-
-
-[!important]
-
-V 中向量张成的空间是最小的包含该向量组的 V 的子空间
-
-
-^span-property1
-取  中任意向量组  即证明其张成的向量组是子空间并且是所有包含该向量组的  的子空间的子集
-
-证明  是  的子空间
-
-取  得到 
-取    和      其中   
-
-故满足加法封闭性
-
-
-取  取任意  则有
-
-故满足标量乘法封闭性
-结合[[向量空间vector space#^ebf134]]    
-
-
-证明  是任意包含向量组  的子空间  的子集
-对任意  即为  分别与标量乘积的加和
-由于子空间具有加法封闭性和标量乘法封闭性，故  即 
-
-综合以上两个命题的证明即可 
-
-finite-dimensional vector space(有限维向量空间)
-
-[!info]
-如果向量空间  能够表示成某一向量组^1的张成空间，则称其为有限维向量空间
-
-
-polynomial(多项式)
-
-[!info]
-
-对于函数  若存在  使得对任意  均有 
- 即  中所有多项式构成的集合
-
-
-
-[!important]
- 为  [^2]的子空间
-
-只需一一验证[[向量空间vector space#^ebf134]]]即可
-degrees of a polynomial(多项式的次数)
-
-[!info]
-对于多项式  存在
-
-[^2]:  即集合  [[向量空间vector space#]]
-
-                            </p>
-                        </div>
-                        <!-- / small-post-text -->
-                    </div>
-                    <!-- / post-block -->
-                </div>
-                <!-- / col-md-4 -->
-                <!-- / post-block -->
-                
-                <!-- post-block -->
-                <div class="col-sm-4">
-                    <div class="post-block">
-                        <a href="2026/01/31/comprehensive note/线性代数相关知识补充/向量空间vector space/" class="post-preview" style="background-image: url(/images/post_preview_default.jpg)"></a>
-                        <div class="small-post-text">
-                            <h5><a href="2026/01/31/comprehensive note/线性代数相关知识补充/向量空间vector space/"></a></h5>
-                            <p class="small-post-meta">
-                                2026/01/31
-                            </p>
-                            <p class="space-bottom" style="max-height: 100px; overflow: hidden">
-                                Vector Space(向量空间)
-
-[!info]
-==对于具有以下性质的集合  ,称其为向量空间，以下所有的   均指代数闭域==
-commutativity(可交换性)
-(仅须加法满足即可)
-  则
-associativity(可结合性)
-
-for addition  则
-for scalar multiplication  
-
-distributive properties(分配性)
-
- 以及  有
-
-additive identity(加法恒等元)
-
-存在  
-
-multiplicative identity(乘法恒等元)
-
-存在
-
-additive inverse(加法逆元)
-
-存在
-
-
-[!info]
-
-即集合  映射到 field  的所有函数组成的集合
-当  ，即为
-
-Subspace(子空间)
-
-[!info]
-对于以下满足所有性质的向量空间  的子集  称其为向量空间  的子空间
-additive identity
-
-
-
-
-可等价替换为  ==意味着证明 一般只需证明即可==
-
-close under addition
-
-
-
-close under scalar multiplication
-
-
-^ebf134
-
-[!caution]
-
-== 不是  的子空间==[^6]
-对  存在只满足additive identity 和 close under multiplication 的非子空间的子集 [^7]
-==** 的所有周期函数构成的集合  不是  的子空间 **==[^8]
-
-
-
-[!important]
-
-向量空间  的任意一族子空间  的交集  是  的子空间
-^subspace-property0
-
-
-证明：
-
-
-[!important]
-
-对  的任意两个子空间  令  有
- 是  的子空间  
-^subspace-property1
-
-
-
-充分性
-
-情况一：存在  取任意 
-由  作为  子空间的加法封闭性可知
-若 由 作为子空间的标量乘法封闭性和加法封闭性可知 则矛盾
-所以  由于  具有任意性即  中任意向量均在  中，也就是说 
-然而这与  矛盾
-进而原假设不正确
-情况二：存在  类似情况一推导步骤，我们可以推导出
- 原命题成立
-情况三：对任意  即  命题成立
-
-
-
-必要性
-而  为子空间
-
-
-
-[!important]
-
-对  的任意三个子空间的并集显然是  的子空间，当且仅当其中一个子空间包含另外两个
- 是  的子空间  
-^subspace-property2
-
-
-
-充分性
-
-情况一：其中一个子空间是另外两个子空间的并集的子集
-i.e. 
-根据[[向量空间vector space#^subspace-property1]]我们可以得到  是  的子空间
-同样的再次运用[[向量空间vector space#^subspace-property1]]得到  结合 
-我们便证明了该情况下命题成立
-情况二：其中任意两个子空间的并集与第三个子空间不是子集和母集的关系
-i.e.   并且 
-即同时存在  和  则由于 是V的子空间由其加法封闭性
-
-若  则  矛盾
-若  则   矛盾
-进而该情况不成立
-
-
-情况三：其中两个子空间的并集为另一子空间的子集
-i.e.  
-即该命题直接成立
-
-
-
-必要性   ==注意[^9]==
-
-
-
-Sum of the subspaces(子空间之和)
-
-[!info]
-
-对于任意向量空间  的子空间 ， 定义其和为Missing or unrecognized delimiter for \Big\sum_{k=1}^{m}V_k=\Big{\sum_{k=1}^{m}\boldsymbol{v_k}\Big|\boldsymbol{v}_k\in V_k;,;k=1,2,\dots,m\Big}
-
-[!important]
-
-子空间的和是最小的包含这些子空间的子空间
-
-
-设
-此时    即  
-而对于任何包含集合   的向量空间  的子空间  必然包含 [^1]
-
-
-[!important]
-
-子空间加法具备可交换性，可结合性，具备加法恒等元
-
-
-
-[!caution]
-
-==子空间（除  外）不具备加法逆元==
-
-
-Direct sum(直和)
-
-[!info]
-满足对于  有且仅有  [^2] 一种表示方式的子空间  的和  称为直和，记为
-
-
-
-[!important]
-
-
-     [^2]当且仅当 
-
-
-不妨假设   
-存在另一种表示方式  
-即至少存在两个 
-两式相减得到
-
-而这与命题条件矛盾
- ^direct-property1
-
-[!important]
-
-         [^3]
-
-
-充分性
-显然 [^4]，假设存在 
-则必然导致  即 
-此时显然存在两组  能表示 
-$$\left{\right.$$
-矛盾
-必要性
- 意味着不存在  使得  [^5]
-即  当且仅当 
-而由[[向量空间vector space#^direct-property1]]可知 
-
-[^1]: 由子空间的加法封闭性可知 
-[^2]: 一一对应的 
-[^3]: 只在m=2时为充要条件，m其余取值情况下  是  的充分不必要条件
-[^4]: 由子空间的定义中加法恒等元存在性可知 
-[^5]: 因为假设存在非零的   使得  ,由子空间的标量乘法封闭性可知     所以会有 矛盾
-[^6]: 不满足标量乘法封闭性 
-[^7]: 取  或者取 
-[^8]: 因为周期可以取不一样的，取 
-[^9]: 值得注意的是这里不能粗暴地设 强行转为[[向量空间vector space#^subspace-property1]],这是不成立的,因为  不一定是  的自空间
-
-                            </p>
-                        </div>
-                        <!-- / small-post-text -->
-                    </div>
-                    <!-- / post-block -->
-                </div>
-                <!-- / col-md-4 -->
-                <!-- / post-block -->
-                
-                <!-- post-block -->
-                <div class="col-sm-4">
-                    <div class="post-block">
-                        <a href="2026/01/02/comprehensive note/模电/review/" class="post-preview" style="background-image: url(/images/post_preview_default.jpg)"></a>
-                        <div class="small-post-text">
-                            <h5><a href="2026/01/02/comprehensive note/模电/review/"></a></h5>
-                            <p class="small-post-meta">
-                                2026/01/02
-                            </p>
-                            <p class="space-bottom" style="max-height: 100px; overflow: hidden">
-                                
-静态工作点包括
-
-
-
-
-
-共射（一般用作中间级）
-共集（一般用作输入输出极）
-共基
-
-
-
-
-放大物理量
-电压和电流
-电流
-电压
-
-
-输入电阻
-
-高
-
-
-
-输出电阻
-
-低
-
-
-
-输出频带
-
-
-超级宽
-
-
-瞬时极性法
-B+,E+,C-
-B+,E+,C-
-B=0,==E+,C+==
-
-
-
-
-一般情况下$U_{CES}\approx U_{BE}=\left{硅三级管锗三级管\right.$即饱和管压降
-    ==一般而言
-Different mode signal差模信号：幅值相同方向相反的信号
-Common mode signal 共模信号：幅值相同方向相同的信号
-Common mode rejection ratio共模抑制比
-- 共模放大倍数
-- 差模放大倍数
-放大电路在低频段放大倍数下降原因：耦合电容和旁路电容
-在高频段放大倍数下降的原因：极间电容
-已知双端输入为$$u_{i1},u_{i2}\stackrel{对应共，差模分量}{\Huge\longrightarrow}\left{\right.$$
-![[c435bb184bc10036c5dd0436ef51a646.jpg]]
-
-
-
-
-负反馈
-
-
-
-
-
-电流负反馈(U_o)
-电压负反馈(I_o)
-
-
-
-
-令输出电压为零==看反馈回路两端电压是否为零==
-为零
-不为零
-
-
-
-稳定输出电流
-稳定输出电压
-
-
-
-
-带载能力强
-
-
-
-增大输出电阻
-减小输出电阻
-
-
-在求解反馈    时可直接令输入信号为零计算反馈量即可
-
-
-
-
-
-
-
-
-
-串联反馈(I_f)
-并联反馈(U_f)
-
-
-
-
-
-可减小从信号源索取的电流
-
-
-
-
-增大输入电阻
-
-
-
-
-
-
-关于波特图
-附加相移45°，10
-$$\dot{A}{u}=\pm\frac{\dot{A}m\prod{i=1}^{N}\Big(j\frac{f}{f{Li}}\Big)}{\prod_{i=1}^{N}\Big(1+j\frac{f}{f_{Li}}\Big)\prod_{i=1}^{M}\Big(1+j\frac{f}{f_{Hi}}\Big)}=\pm\frac{\dot{A}m}{\prod{i=1}^{N}\Big(1+\frac{f_{Li}}{jf}\Big)\prod_{i=1}^{M}\Big(1+\frac{jf}{f_{Hi}}\Big)}$$
-
-
-
-- 为正号时，为共集或者共基接法，中频段相位°,
-- 为负号时，为共射接法，中频段相位°
-- 为放大电路级数，为耦合电容个数
-- 判断电路的耦合方式：主要看低频段波特图
-- 平坦则为直接耦合
-- 下降则为阻容耦合
-
-
-甲类放大电路：晶体管始终导通
-
-
-乙类放大电路：两个晶体管交替工作，每管导通半个周期==存在交越失真==
-
-
-甲乙类放大电路：每管交替导通时长大于半周期==消除交越失真==
-
-
-==抑制温漂==和==稳定静态工作点==应该引入直流负反馈
-
-
-产生正弦波振荡条件
-
-正弦振荡电路包括
-
-放大电路
-选频网络
-正反馈网络
-稳幅环节
-
-
-放大电路是否能正常工作即具备合适的静态工作点
-满足相位条件（瞬时极性法判断——断开反馈，加信号u_0，看u_0极性是否与u_f相同）
-满足起振条件即
-对RC桥式振荡电路而言，  故对应起振条件  
-
-
-
-在RC振荡电路中反馈回路需要加入非线性环节,目的是==起振和稳幅==
-
-
-RC振荡电路中多采用电压串联负反馈原因是
-
-带载能力强
-输出电压失真小
-振荡频率稳定
-
-
-
-【品质因数】
-
-
-集成运放工作状态
-
-
-
-
-
-
-非线性区
-线性区
-
-
-
-
-工作在
-开环或正反馈
-深度负反馈
-
-
-满足
-虚断
-虚短和虚断
-
-
-
-电压比较器
-比例，积分，加减运算
-
-
-
-
-全波整流，半波整流
-
-
-                            </p>
-                        </div>
-                        <!-- / small-post-text -->
-                    </div>
-                    <!-- / post-block -->
-                </div>
-                <!-- / col-md-4 -->
-                <!-- / post-block -->
-                
-        </div>
-        <!-- / row -->
-    </div>
-    <!-- / container -->
-    <div class="page-to-all"><a href="/post/index.html" class="btn btn-primary btn-rounded">全部文章</a></div>
-</section>
-<!-- / blog section 3col -->
-
-<!-- / content -->
-        <!-- / content -->
-</body>
-<!-- footer -->
-<footer>
-    <div class="container">
-        <p class="footer-info">© Made by Ckryo</p>
-    </div>
-    <!-- / container -->
-</footer>
-<!-- / footer -->
-<!-- portfolio -->
-<script src="/js/custom.js"></script>
-<script src="/js/jquery.shuffle.min.js"></script>
-<!-- lightbox -->
-<script src="/js/jquery.magnific-popup.min.js"></script>
-<!-- / lightbox -->
-<!-- / portfolio -->
-<!-- preloader -->
-<script src="/js/preloader.js"></script>
-<!-- / preloader -->
-<!-- / javascript -->
-<script src="/js/jquery.lettering.js"></script>
-<script src="/js/jquery.textillate.js"></script>
-<script>
-$(function() {
-    $('#banner-title').textillate({
-        in: {
-            // set the effect name
-            effect: 'fadeInDown',
-            callback: function() {
-                $('#banner-description').css('display', 'block');
-                $('#banner-description').textillate();
-            }
-        },
-        // set the type of token to animate (available types: 'char' and 'word')
-        type: 'char'
-    });
-});
-</script>
-</html>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/project/archives/2026/02/">
+            <span class="card-archive-list-date">
+              February 2026
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Website Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article Count :</div><div class="item-count">1</div></div><div class="webinfo-item"><div class="item-name">Unique Visitors :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Page Views :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Update :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-02-21T11:20:27.454Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By Brice Li</span><span class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.1</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.4</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/project/js/utils.js?v=5.5.4"></script><script src="/project/js/main.js?v=5.5.4"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
